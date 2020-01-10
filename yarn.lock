@@ -38,6 +38,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/express-list-endpoints@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/express-list-endpoints/-/express-list-endpoints-4.0.1.tgz#ae8b03e83e873e13c5e1105fc1a9ffe367eeebfa"
+  integrity sha512-hWeurpN0+u8JUTbLpSzQLxQbrOszRkba7LKlLPj8L8YH4DUlGgbIzzNwrc7563CV+Hr10QrpZKlQBAasK6x9KQ==
+  dependencies:
+    "@types/express" "*"
+
 "@types/express-serve-static-core@*":
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.1.tgz#82be64a77211b205641e0209096fd3afb62481d3"
@@ -46,7 +53,7 @@
     "@types/node" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.17.2":
+"@types/express@*", "@types/express@^4.17.2":
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.2.tgz#a0fb7a23d8855bac31bc01d5a58cadd9b2173e6c"
   integrity sha512-5mHFNyavtLoJmnusB8OKJ5bshSzw+qkMIBAobLrIM48HJvunFva9mOa6aBwh64lBFyNwBbs0xiEFuj4eU/NjCA==
@@ -61,9 +68,9 @@
   integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
 
 "@types/node@*":
-  version "13.1.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.1.4.tgz#4cfd90175a200ee9b02bd6b1cd19bc349741607e"
-  integrity sha512-Lue/mlp2egZJoHXZr4LndxDAd7i/7SQYhV0EjWfb/a4/OZ6tuVwMCVPiwkU5nsEipxEf7hmkSU7Em5VQ8P5NGA==
+  version "13.1.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.1.6.tgz#076028d0b0400be8105b89a0a55550c86684ffec"
+  integrity sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -77,6 +84,13 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
+
+"@whsha/powerschool-api@^1.2.0":
+  version "1.2.1"
+  resolved "https://npm.pkg.github.com/download/@whsha/powerschool-api/1.2.1/fb4a235683025bc3fbf64c46645be6d6df231bbc0049082ca5123bbaf39efb6d#"
+  integrity sha512-6RNEMVzLhy7pyo8CtrxVZGb4kXhwIoxbcvMq4wodPrWe5HrDh7mXf97+BDL5UHwp1ZK1il4T5qiOc/lkzrpswQ==
+  dependencies:
+    strong-soap "^1.2.6"
 
 accept-language@^3.0.18:
   version "3.0.18"
@@ -167,7 +181,7 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-body-parser@1.19.0:
+body-parser@1.19.0, body-parser@^1.19.0:
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
   integrity sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
@@ -422,6 +436,11 @@ execa@^1.0.0:
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
+
+express-list-endpoints@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/express-list-endpoints/-/express-list-endpoints-4.0.1.tgz#f83ec9de4df21b904cfba523bc913aee4c17e9db"
+  integrity sha512-KjY7frYk72/Jwk2VgqyvuXlTPslEkWkzjUXPUMCUguVmAWqd6fh60VHr+sEfqJgMAOE3hKhUjm/7tLASVaE2Qg==
 
 express@^4.17.1:
   version "4.17.1"
@@ -934,14 +953,6 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-powerschool-api@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/powerschool-api/-/powerschool-api-1.1.0.tgz#e5d8a3a8542f2d9d07b8f3ee7676d98e03fe2536"
-  integrity sha512-61wvzKWcgOYfM0g/sX51G/5VXb/oDDcTb2s+C/rCMw77qJrFns+eaTPWA+6vscX1h1b6TbcGdF6DgL8JpkJkww==
-  dependencies:
-    readline-sync "^1.4.7"
-    strong-soap "^1.2.6"
-
 proxy-addr@~2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.5.tgz#34cbd64a2d81f4b1fd21e76f9f06c8a45299ee34"
@@ -997,11 +1008,6 @@ raw-body@2.4.0:
     http-errors "1.7.2"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
-
-readline-sync@^1.4.7:
-  version "1.4.10"
-  resolved "https://registry.yarnpkg.com/readline-sync/-/readline-sync-1.4.10.tgz#41df7fbb4b6312d673011594145705bf56d8873b"
-  integrity sha512-gNva8/6UAe8QYepIQH/jQ2qn91Qj0B9sYjMBBs3QOB8F2CXcKgLxQaJRP76sWVRQt+QU+8fAkCbCvjjMFu7Ycw==
 
 request@^2.72.0:
   version "2.88.0"
