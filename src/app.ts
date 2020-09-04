@@ -51,9 +51,10 @@ app.post<{}, {}, ILoginInfo>("/login", bodyParser.json(), async (req, res, next)
 });
 
 app.post<{}, {}, PowerSchoolSession>("/student", bodyParser.json(), async (req, res, next) => {
+    // console.log(req.body);
     res.status(200).contentType("json").send(
         JSONStringifyNoApi(
-            await new PowerSchoolUser(req.body, api).getStudentInfo()
+            await new PowerSchoolUser(req.body, api).getStudentsInfo().catch(next)
         )
     );
 });
@@ -68,7 +69,7 @@ app.get("/", (req, res) => {
 });
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-    res.status(500).send(err);
+    res.status(500).send(`${err}`);
 });
 
 app.listen(process.env.PORT ?? 8080);

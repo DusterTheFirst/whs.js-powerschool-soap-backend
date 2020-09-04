@@ -86,9 +86,9 @@
     "@types/mime" "*"
 
 "@whsha/powerschool-api@^1.2.0":
-  version "1.2.1"
-  resolved "https://npm.pkg.github.com/download/@whsha/powerschool-api/1.2.1/fb4a235683025bc3fbf64c46645be6d6df231bbc0049082ca5123bbaf39efb6d#"
-  integrity sha512-6RNEMVzLhy7pyo8CtrxVZGb4kXhwIoxbcvMq4wodPrWe5HrDh7mXf97+BDL5UHwp1ZK1il4T5qiOc/lkzrpswQ==
+  version "1.2.3"
+  resolved "https://npm.pkg.github.com/download/@whsha/powerschool-api/1.2.3/78f52efb76bf7d0ee15bdb2acb44bb085c8d8a071999167d127112e19a96b63c#"
+  integrity sha512-9Uclf88TiB9eQsJ4+toI7jClX81FxmkWfajRFERb31Z/plr3owC8lJtJzjxCD8Un+ksE9oyok0Ec4B05YkoArA==
   dependencies:
     strong-soap "^1.2.6"
 
